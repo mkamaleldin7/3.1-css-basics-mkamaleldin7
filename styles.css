@@ -75,6 +75,15 @@ body {
     background-color: #f0f2f5;
     color: #1c1e21;
 }
+p {
+    color: #333;
+    font-size: 16px;
+}
+
+span{
+    color: #888;
+    font-size: 14px;
+}
 
 #app {
     max-width: 600px;
@@ -83,6 +92,65 @@ body {
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     overflow: hidden;
+}
+
+.username {
+    color: #1877f2;
+    font-weight: bold;
+}
+
+.blue-text {
+    color: #4267B2;
+}
+
+.red-text {
+    color: #e74c3c;
+}
+
+.highlight {
+    background-color: #f0f2f5;
+    padding: 15px;
+}
+
+#featured-user {
+    color: #42b883;
+    font-size: 18px;
+}
+
+p { color: #333; }                    /* Specificity: 0-0-1 */
+.winner { color: #ff6b6b; }           /* Specificity: 0-1-0 */
+#specificity-test { color: #4ecdc4; }  /* Specificity: 1-0-0 */
+p.winner { color: #95a5a6; }          /* Specificity: 0-1-1 */
+
+.important-test {
+    color: #e67e22 !important;
+}
+
+.chat-container .message {
+    color: #2c3e50;
+}
+
+.chat-container .message-time {
+    color: #7f8c8d;
+    font-size: 12px;
+}
+.send-button:hover {
+    background-color: #3b5998;
+    color: white;
+}
+
+.chat-link:hover {
+    color: #1877f2;
+    text-decoration: none;
+}
+
+h4.trending-tag, h5.trending-tag, h6.trending-tag {
+    color: #8b9dc3;
+    font-family: Arial;
+}
+
+* {
+    box-sizing: border-box;
 }
 
 header {
